@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .area-wrapper {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .area-wrapper textarea {
+            text-align: left;
+            width: 500px;
+            height: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .textarea {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+    
+    <div class="container">
+        <div class="area-wrapper">
+            <h3>Graphs and stuff like that format</h3>
+            <textarea class="area-wrapper" placeholder="Enter text here..."></textarea>
+        </div>
+        <div class="area-wrapper">
+            <h3>Zgredified</h3>
+            <textarea class="area-wrapper" placeholder="Enter text here..."></textarea>
+        </div>
+    </div>
+</body>
+</html>
