@@ -118,6 +118,13 @@ a {
     background-color: #555;
 }
 
+#labelzerolabel {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
 #copy {
     position: absolute;
     right: 20px;

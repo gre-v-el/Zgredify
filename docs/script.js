@@ -99,6 +99,8 @@ document.getElementById("zgredify").addEventListener("click", function() {
             return;
         }
 
+        var labelOffset = document.getElementById("labelzero").checked ? -1 : 0;
+
         var x=200 + 100*Math.cos(2*Math.PI*i/verts);
         var y=200 + 100*Math.sin(2*Math.PI*i/verts);
         var list = nums
@@ -106,7 +108,6 @@ document.getElementById("zgredify").addEventListener("click", function() {
             .map((x) => parseInt(x)) // convert to int
             .filter((x) => x > i) // reject smaller verts
             .map((x) => "-"+(x-1));
-        out.value += `${i-1}(x:${x.toFixed(1)},y:${y.toFixed(1)}) ${list.length} ${list.join(" ")}\n`;
-
+        out.value += `${i-1}(x:${x.toFixed(1)},y:${y.toFixed(1)},label:${i+labelOffset}) ${list.length} ${list.join(" ")}\n`;
     }
 });
