@@ -4,6 +4,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #f3effb;
     background-color: #160a29;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -31,6 +34,7 @@ a {
 
 
 .container {
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -54,6 +58,15 @@ a {
     border-radius: 5px;
     box-sizing: border-box;
     resize: none;
+
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.area-wrapper textarea.error {
+    color: rgb(255, 84, 84);
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -67,8 +80,7 @@ a {
 }
 
 
-/* Zgredify button */
-.btn {
+#zgredify {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -82,7 +94,45 @@ a {
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.btn:hover {
+#zgredify:hover {
     background-color: rgb(27, 128, 13, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#info {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    width: 30px;
+    height: 30px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#info:hover {
+    background-color: #555;
+}
+
+#copy {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#copy:hover {
+    background-color: #555;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

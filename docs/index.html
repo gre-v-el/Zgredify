@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Webpage</title>
+    <title>Zgredify</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,12 +15,14 @@
     <div class="container">
         <div class="area-wrapper">
             <h3>Graphs and stuff like that format</h3>
-            <textarea class="area-wrapper">5&#13;4 2 3 4 5&#13;2 1 5&#13;1 1&#13;1 1&#13;2 1 2</textarea>
-            <button class="btn">Zgredify</button>
+            <textarea class="area-wrapper" id="input">5&#13;4 2 3 4 5&#13;2 1 5&#13;1 1&#13;1 1&#13;2 1 2</textarea>
+            <button id="zgredify">Zgredify</button>
+            <button id="info">?</button>
         </div>
         <div class="area-wrapper">
             <h3>Zgredified</h3>
-            <textarea class="area-wrapper" placeholder="Enter text here..."></textarea>
+            <textarea class="area-wrapper" readonly placeholder="Press the Zgredify button to see output" id="output"></textarea>
+            <button id="copy">Copy</button>
         </div>
     </div>
 </body>
